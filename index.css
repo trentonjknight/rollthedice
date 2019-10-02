@@ -27,14 +27,7 @@ body{
 	transform: rotateY(270deg) translateX(-100px);
 	transform-origin: center left;
 }
-/* .top {
-	transform: rotateX(-90deg) translateY(-100px);
-	transform-origin: top center;
-}
-.bottom {
-	transform: rotateX(90deg) translateY(100px);
-	transform-origin: bottom center;
-} */
+
 .front {
 	transform: translateZ(1px);
 }
@@ -44,7 +37,7 @@ body{
 }
 
 .cube {
-	animation: spin 5s infinite linear;
+	animation: spin 20s infinite linear;
 }
 .side{
     background-color: darkorange;
