@@ -21,8 +21,8 @@ function getRandom(){
         </div>`
 }
 
-function getDice() {
-    let dice = Math.floor(Math.random()*6)+1;
+function getDice(dice) {
+ //   let dice = Math.floor(Math.random()*6)+1;
 //    return `<div><h1>${xdice}</h1></div>`
     return `
         <div class="wrap">
@@ -35,7 +35,38 @@ function getDice() {
         </div>`
 
 }
+function sortCubes() {
+let tem = []
+    for (let i = 0; i <6; i++) {
+    let dice = Math.floor(Math.random()*6)+1;
+    tem.push(dice);
+    console.log("$$$$$",getDice(dice))
 
-function rollDice() {
-    document.querySelector('.unsortedDice').innerHTML = getDice() + getDice() + getDice() + getDice() + getDice();
 }
+return tem
+}
+
+console.log(sortCubes())
+function rollDice() {
+    document.querySelector('.unsortedDice').innerHTML = sortCubes()
+}
+let test = [3,5,1,7,9,5,67]
+
+const bubbleSort = arr => {
+  let swapped;
+  do {
+    swapped = false;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > arr[i + 1]) {
+        let tmp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = tmp;
+        swapped = true;
+      }
+    }
+  } while (swapped);
+  return arr;
+
+
+};
+console.log("######",bubbleSort(test))
