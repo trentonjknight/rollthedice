@@ -44,3 +44,9 @@ body{
 .side{
     background-color: darkorange;
 }
+.cubecube{
+    display:inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 250px;
+}
