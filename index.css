@@ -1,5 +1,7 @@
 body{
-    background-color:snow;
+    background-color:black;
+    font-family: 'Turret Road', cursive;
+    color: white;
 }
 .wrap {
 	perspective: 1500px;
@@ -37,7 +39,7 @@ body{
 }
 
 .cube {
-	animation: spin 20s infinite linear;
+	animation: spin 30s infinite linear;
 }
 .side{
     background-color: darkorange;
